@@ -1,7 +1,6 @@
 # discord 라이브러리 사용 선언
 import discord
 
-
 def find_first_channel(channels):
     position_array = [i.position for i in channels]
     for i in channels:
@@ -32,7 +31,7 @@ class chatbot(discord.Client):
         if message.author.bot:
             return None
 
-
+        
 if __name__ == "__main__":
     client = chatbot()
     client.run("NzUxOTc3MzkyMTI1Mzc4NjQx.X1Q7hQ.BdndyBEL5lTe3nQFW3sFssqK7l4")
